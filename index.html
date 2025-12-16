@@ -1,0 +1,343 @@
+html <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    <title>Segurança da Informação</title>
+</head>
+
+<body>
+    <header>
+        <img src="" alt="">
+        <h1>Como hackers invadem sistemas</h1>
+        <h2>e suas estratégias para obter acesso não autorizado</h2>
+        <h4>as brechas invisíveis que transformam cliques em invasões</h4>
+    </header>
+    <main>
+        <div class="metodo"> <!-- seção 1 -->
+            <h2>Ataques e Ameaças Comuns</h2>
+
+            <!-- Scanning -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">🔍 Scanning</h5>
+                    <p class="card-text">
+                        O scanning é a técnica usada para identificar portas abertas, serviços e possíveis
+                        vulnerabilidades em um sistema.
+                        Geralmente é o primeiro passo antes de um ataque mais avançado.
+                    </p>
+                    <p><strong>Exemplo:</strong> Uso de ferramentas como Nmap para descobrir portas abertas em um
+                        servidor.</p>
+                </div>
+            </div>
+
+            <!-- SQL Injection -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">💉 SQL Injection</h5>
+                    <p class="card-text">
+                        O SQL Injection ocorre quando comandos SQL maliciosos são inseridos em campos de entrada.
+                        Isso pode permitir acesso não autorizado ao banco de dados.
+                    </p>
+                    <p><strong>Exemplo:</strong> Inserir <code>' OR '1'='1</code> em um campo de login.</p>
+                </div>
+            </div>
+
+            <!-- XSS -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">🧨 XSS (Cross-Site Scripting)</h5>
+                    <p class="card-text">
+                        O XSS permite a execução de scripts maliciosos no navegador da vítima.
+                        Ele ocorre quando o sistema não valida corretamente dados de entrada.
+                    </p>
+                    <p><strong>Exemplo:</strong> Inserir <code>&lt;script&gt;alert('Ataque')&lt;/script&gt;</code> em um
+                        formulário.</p>
+                </div>
+            </div>
+
+            <!-- Engenharia Social -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">🧠 Engenharia Social</h5>
+                    <p class="card-text">
+                        A engenharia social explora o comportamento humano para obter informações confidenciais.
+                        O atacante se passa por alguém confiável.
+                    </p>
+                    <p><strong>Exemplo:</strong> Fingir ser do setor de TI para pedir a senha de um funcionário.</p>
+                </div>
+            </div>
+
+            <!-- Força Bruta -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">🔑 Força Bruta</h5>
+                    <p class="card-text">
+                        Ataques de força bruta tentam diversas combinações de senha até encontrar a correta.
+                        Eles exploram senhas fracas ou sistemas sem bloqueio de tentativas.
+                    </p>
+                    <p><strong>Exemplo:</strong> Testar milhares de senhas automaticamente em um login.</p>
+                </div>
+            </div>
+
+            <!-- Phishing -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">🎣 Phishing</h5>
+                    <p class="card-text">
+                        O phishing engana usuários para que revelem dados sensíveis, como senhas e cartões.
+                        Normalmente ocorre por e-mails ou mensagens falsas.
+                    </p>
+                    <p><strong>Exemplo:</strong> E-mail falso do banco solicitando confirmação de dados.</p>
+                </div>
+            </div>
+
+            <!-- Ransomware -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">💰 Ransomware</h5>
+                    <p class="card-text">
+                        O ransomware criptografa arquivos da vítima e exige pagamento para liberação.
+                        Ele pode se espalhar rapidamente em redes vulneráveis.
+                    </p>
+                    <p><strong>Exemplo:</strong> WannaCry criptografando computadores com Windows desatualizado.</p>
+                </div>
+            </div>
+
+            <!-- Ataques a APIs -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">🔗 Ataques a APIs</h5>
+                    <p class="card-text">
+                        Esses ataques exploram falhas de autenticação ou validação em APIs.
+                        Podem resultar em vazamento ou manipulação de dados.
+                    </p>
+                    <p><strong>Exemplo:</strong> Acessar dados de outros usuários alterando um ID na URL.</p>
+                </div>
+            </div>
+
+            <!-- Vulnerabilidades CVE -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">📄 Vulnerabilidades CVE</h5>
+                    <p class="card-text">
+                        CVEs são falhas de segurança catalogadas publicamente.
+                        Atacantes exploram sistemas que não aplicam correções.
+                    </p>
+                    <p><strong>Exemplo:</strong> Explorar uma CVE conhecida em um servidor desatualizado.</p>
+                </div>
+            </div>
+
+            <!-- Exploits Automatizados -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">🤖 Exploits Automatizados</h5>
+                    <p class="card-text">
+                        Exploits automatizados utilizam scripts ou ferramentas para atacar múltiplos sistemas.
+                        Eles exploram vulnerabilidades sem interação humana.
+                    </p>
+                    <p><strong>Exemplo:</strong> Bot escaneando e atacando servidores vulneráveis automaticamente.</p>
+                </div>
+            </div>
+        </div>
+        <div class="ferramenta"> <!-- seção 2 -->
+            <h2>Ferramentas Utilizadas em Ataques e Testes de Segurança</h2>
+
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Ferramenta</th>
+                        <th>Para que serve</th>
+                        <th>Como ajuda no ataque</th>
+                        <th>Medidas de defesa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Nmap</strong></td>
+                        <td>
+                            Ferramenta de varredura de rede usada para identificar portas abertas
+                            e serviços em execução.
+                        </td>
+                        <td>
+                            Permite ao atacante descobrir serviços vulneráveis e pontos de entrada
+                            no sistema.
+                        </td>
+                        <td>
+                            Fechar portas desnecessárias, usar firewall e monitorar acessos suspeitos.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Burp Suite</strong></td>
+                        <td>
+                            Ferramenta para testes de segurança em aplicações web.
+                        </td>
+                        <td>
+                            Intercepta e modifica requisições HTTP para explorar falhas como SQL Injection
+                            e XSS.
+                        </td>
+                        <td>
+                            Validar entradas, usar HTTPS e aplicar testes de segurança no desenvolvimento.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Metasploit</strong></td>
+                        <td>
+                            Framework usado para explorar vulnerabilidades conhecidas.
+                        </td>
+                        <td>
+                            Automatiza ataques usando exploits prontos contra sistemas vulneráveis.
+                        </td>
+                        <td>
+                            Manter sistemas atualizados e aplicar correções de segurança.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Kali Linux</strong></td>
+                        <td>
+                            Sistema operacional focado em testes de penetração e auditoria de segurança.
+                        </td>
+                        <td>
+                            Reúne diversas ferramentas que facilitam ataques e testes de invasão.
+                        </td>
+                        <td>
+                            Controle de acesso, monitoramento de rede e uso responsável das ferramentas.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Wireshark</strong></td>
+                        <td>
+                            Ferramenta para captura e análise de tráfego de rede.
+                        </td>
+                        <td>
+                            Permite capturar dados sensíveis trafegando sem criptografia.
+                        </td>
+                        <td>
+                            Utilizar criptografia (HTTPS, VPN) e redes seguras.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Hydra</strong></td>
+                        <td>
+                            Ferramenta usada para ataques de força bruta em serviços de login.
+                        </td>
+                        <td>
+                            Testa diversas combinações de usuário e senha automaticamente.
+                        </td>
+                        <td>
+                            Usar senhas fortes, MFA e bloqueio após tentativas falhas.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="protecao"> <!-- seção 3 -->
+            <ul>
+                <li>
+                    <strong>Aplicar updates</strong><br>
+                    Manter sistemas e softwares sempre atualizados reduz vulnerabilidades conhecidas.
+                    Atualizações frequentemente corrigem falhas de segurança exploradas por atacantes.
+                </li>
+
+                <li>
+                    <strong>MFA (Autenticação de Dois Fatores)</strong><br>
+                    O MFA adiciona uma camada extra de segurança além da senha.
+                    Mesmo que a senha seja comprometida, o acesso ainda fica protegido.
+                </li>
+
+                <li>
+                    <strong>Firewalls</strong><br>
+                    Firewalls controlam o tráfego de entrada e saída da rede.
+                    Eles ajudam a bloquear acessos não autorizados e ataques externos.
+                </li>
+
+                <li>
+                    <strong>Senhas fortes</strong><br>
+                    Senhas devem conter letras, números e caracteres especiais.
+                    Isso dificulta ataques de força bruta e acessos indevidos.
+                </li>
+
+                <li>
+                    <strong>Criptografia</strong><br>
+                    A criptografia protege dados sensíveis durante o armazenamento e a transmissão.
+                    Mesmo que os dados sejam interceptados, não poderão ser lidos facilmente.
+                </li>
+
+                <li>
+                    <strong>Limitar portas abertas</strong><br>
+                    Apenas portas necessárias devem permanecer abertas no sistema.
+                    Isso reduz a superfície de ataque e possíveis invasões.
+                </li>
+
+                <li>
+                    <strong>Validações no back-end</strong><br>
+                    As validações devem ocorrer no servidor para evitar dados maliciosos.
+                    Isso impede ataques como injeção de código e manipulação de dados.
+                </li>
+
+                <li>
+                    <strong>Uso de Prepared Statements</strong><br>
+                    Prepared Statements evitam ataques de SQL Injection.
+                    Eles garantem que os dados do usuário sejam tratados de forma segura.
+                </li>
+
+                <li>
+                    <strong>Backup frequente</strong><br>
+                    Backups regulares garantem a recuperação de dados em caso de falhas ou ataques.
+                    Eles são essenciais para a continuidade do negócio.
+                </li>
+
+                <li>
+                    <strong>Políticas de acesso</strong><br>
+                    Definir permissões adequadas limita o acesso apenas a usuários autorizados.
+                    Isso reduz riscos de uso indevido e vazamento de informações.
+                </li>
+            </ul>
+
+        </div>
+        <div class="casos"> <!-- seção 4 -->
+            <h2>Casos de Ataques Cibernéticos</h2>
+
+            <h3>Ataque do WannaCry (2017)</h3>
+
+            <p><strong>O que aconteceu:</strong><br>
+                O ataque do WannaCry foi um ransomware que se espalhou rapidamente em maio de 2017, afetando mais de
+                230.000 computadores em 150 países. Ele criptografava os arquivos dos sistemas infectados e exigia um
+                resgate em Bitcoin para liberá-los. O ransomware se aproveitou de uma vulnerabilidade no sistema
+                operacional Windows, conhecida como EternalBlue, que havia sido descoberta pela NSA (Agência de
+                Segurança Nacional dos Estados Unidos) e, posteriormente, vazada pelo grupo Shadow Brokers.</p>
+
+            <p><strong>Qual vulnerabilidade foi explorada:</strong><br>
+                O WannaCry explorou uma falha crítica no protocolo SMB (Server Message Block) do Windows, chamada
+                EternalBlue. A vulnerabilidade permitia a execução remota de código, ou seja, um atacante podia invadir
+                sistemas sem a necessidade de interação do usuário.</p>
+
+            <p><strong>Impacto:</strong><br>
+                O impacto do ataque foi global, afetando hospitais, empresas e governos. Organizações como o NHS
+                (Serviço Nacional de Saúde do Reino Unido) foram fortemente afetadas, com serviços interrompidos e dados
+                comprometidos. O ataque causou milhões de dólares em prejuízos, além de interromper operações críticas
+                em diversas indústrias.</p>
+
+            <p><strong>Como poderia ter sido evitado:</strong><br>
+                O ataque poderia ter sido evitado caso as organizações tivessem aplicado as atualizações de segurança
+                fornecidas pela Microsoft para corrigir a vulnerabilidade do EternalBlue. A Microsoft já havia liberado
+                um patch para a falha meses antes do ataque, mas muitas empresas e usuários não haviam atualizado seus
+                sistemas. Além disso, o uso de firewalls e a segmentação de rede ajudariam a minimizar o impacto do
+                ataque.</p>
+        </div>
+    </main>
+</body>
+
+</html>
